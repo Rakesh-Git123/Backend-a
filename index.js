@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import express from "express";
 import dotenv from "dotenv";
 import userRouter from "./routes/userRoute.js";
-dotenv.config();
+dotenv.config({ silent: true });
 
 const app = express();
 const dbuser = encodeURIComponent(process.env.DBUSERNAME);
